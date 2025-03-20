@@ -16,7 +16,7 @@ int main () {
     switch (op) {
     
     //checkin
-    case 1:
+       case 1:
     printf("informe seu nome:\n");
     scanf("%s", nome);
     printf("informe seu sobrenome:\n");
@@ -32,20 +32,26 @@ int main () {
     printf("quantos dias serão reservados?\n");
     scanf("%s", dr);
     printf("seu quarto sera o 16,muito obrigado pela paciência e seja bem-vindo ao nosso hotel");
-    break;
+    break; 
+    
+   
     
     //serviço de quarto
-    case 2:
+    do {
+     case 2:
     printf("informe o numero do seu quarto:\n");
     scanf("%s", nq);
     printf("selecione a opção\n");
     printf("1 - camareira\n");
     printf("2 - outro\n");
     scanf("%d", &op);
-    break;
+    }while(op >2);
+       break;  
+    
     
     //fazer pedido
-    case 3:
+    do{
+       case 3:
     printf("selecione a opção\n");
     printf("1 - café da manhã\n");
     printf("2 - almoço\n");
@@ -53,6 +59,8 @@ int main () {
     printf("4 - janta\n");
     printf("5 - bebidas\n");
     scanf("%d", &op);
+    }while(op >5);
     break;
+ 
 }
 }
